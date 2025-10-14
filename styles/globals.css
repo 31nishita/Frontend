@@ -1,0 +1,4 @@
+body { background: #fffaf8; color:#1f1f1f; font-family: 'Poppins', sans-serif; }
+.hero { border-radius: 12px; overflow: hidden; }
+.post-card { transition: transform .25s ease, box-shadow .25s ease; }
+.post-card:hover { transform: translateY(-6px); box-shadow: 0 10px 30px rgba(0,0,0,0.08); }

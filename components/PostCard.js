@@ -13,6 +13,7 @@ export default function PostCard({ post }) {
             <p className="card-text">{post.excerpt}</p>
             <div className="d-flex justify-content-between align-items-center">
               <small className="text-muted">{post.date}</small>
+              <img src=".\public\img1.jpg" alt="Arrow Icon" style={{ width: 16, height: 16, marginRight: 8 }} />
               <Link href={'/posts/' + post.id} className='btn btn-outline-dark btn-sm'>Read More</Link>
             </div>
           </div>

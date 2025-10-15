@@ -31,20 +31,22 @@ export default function Post({ post }) {
               marginBottom: "2rem",
             }}
           >
+            {new Date(post.published_at).toLocaleDateString}
+            {new Date(post.published_at).toLocaleDateString}
             {new Date(post.created_at).toLocaleDateString()}
           </p>
         </motion.div>
 
         {/* Main Image */}
-        {post.image && (
+        {post.image && (  
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8 }}
           >
             <img
-              src={post.image}
-              alt={post.title}
+              src=".\public\img1.jpg"
+              alt="Pearl Collection Spotlight"
               className="img-fluid rounded mb-4 shadow"
               style={{
                 maxHeight: "480px",
@@ -95,6 +97,7 @@ export default function Post({ post }) {
             <div
               className="row"
               style={{
+
                 display: "grid",
                 gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
                 gap: "16px",
